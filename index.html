@@ -1,33 +1,4 @@
-<!--
----
-layout: default
----
-
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
-<div>
-  <h1> hello world! my name is Tri </h1>
--->
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
   <head>
@@ -44,13 +15,15 @@ layout: default
     <div class="container">
 
       <header>
-        <img src="..\KH_logo.png" class="logo">
-        <h1> KHANG HIEN COMPANY </h1> 
+        <img src="..\Webtest\KH_logo.png" class="logo">
+        <div class="greeting"> KÍNH CHÀO QUÝ KHÁCH! </div>        
+        <div class="order"> ĐẶT HÀNG XIN VUI LÒNG GỌI SỐ 01672910470 HOẶC 0964 005253 </div>
+        <div class="payment"> Thanh toán bằng tiền mặt khi nhận hàng. Trân trọng cám ơn Quý khách! </div>
       </header>
 
       <main>
         <div class="recipe a">
-          <img src="..\BuoiDaXanh.jpg" />
+          <img src="..\Webtest\BuoiDaXanh.jpg" />
           <h2> BƯỞI DA XANH</h2>
           <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
@@ -58,7 +31,7 @@ layout: default
             Bưởi da xanh ruột đỏ hồng, ngọt, bao ăn. Giá 55.000 đ/kg.</p>
         </div>
         <div class="recipe b">
-          <img src="..\DauDua.jpg" />
+          <img src="..\Webtest\DauDua.jpg" />
           <h2>DẦU DỪA</h2>
           <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
@@ -67,7 +40,7 @@ layout: default
           </p>
         </div>
         <div class="recipe c">
-          <img src="..\Quyt.jpg" />
+          <img src="..\Webtest\Quyt.jpg" />
           <h2>QUÝT</h2>
           <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
@@ -75,7 +48,7 @@ layout: default
             Quýt ngọt Bến tre, bao ăn. Giá 55.000 đ/kg.</p>
         </div>
         <div class="recipe d">
-          <img src="..\Cam.jpg" />
+          <img src="..\Webtest\Cam.jpg" />
           <h2>CAM XOÀN</h2>
           <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
@@ -83,7 +56,7 @@ layout: default
             Cam xoàn Bến tre, vỏ mỏng, ngọt, bao ăn. Giá 55.000 đ/kg.</p>
         </div>
         <div class="recipe e">
-          <img src="..\Chanh.jpg" />
+          <img src="..\Webtest\Chanh.jpg" />
           <h2>CHANH</h2>
           <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
@@ -91,7 +64,7 @@ layout: default
             Chanh vườn Bến tre, thơm. Giá 10.000 đ/kg.</p>
         </div>
         <div class="recipe f">
-          <img src="..\Gac.jpg" />
+          <img src="..\Webtest\Gac.jpg" />
           <h2>GẤC</h2>
           <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
@@ -102,8 +75,9 @@ layout: default
       </main>
 
       <footer>
-        <img src="..\KH_logo.png" class="logo">
-        <h2> ĐẶT HÀNG VUI LÒNG GỌI SỐ <strong> 01672910470 hoặc 0964 005253 </strong>. THANH TOÁN TIỀN MẶT KHI NHẬN HÀNG. CẢM ƠN QUÝ KHÁCH! </h2>
+        <img src="..\Webtest\KH_logo.png" class="logo">
+         <div class="companyname"> CÔNG TY KHANG HIỂN </div>
+         <div class="copyright"> Khang Hien Co. giữ bản quyền nội dung trang web này </div>
       </footer>
 
     </div>
