@@ -4,80 +4,366 @@
   <head>
     <meta charset="utf-8">
     <title> GIÁ ĐÚNG!</title>
-    <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster|Work+Sans" rel="stylesheet">
   </head>
 
   <body>
-
     <div class="container">
 
       <header>
-        <img src="https://github.com/tranminhtri75/tranminhtri75.github.io/tree/master/_layouts/KH_logo.png" class="logo">
-        <div class="greeting"> KÍNH CHÀO QUÝ KHÁCH! </div>        
-        <div class="order"> ĐẶT HÀNG XIN VUI LÒNG GỌI SỐ 01672910470 HOẶC 0964 005253 </div>
-        <div class="payment"> Thanh toán bằng tiền mặt khi nhận hàng. Trân trọng cám ơn Quý khách! </div>
+        <div class="cart">
+          <p class="cartname"> Giỏ hàng </p>
+          <p class="sum"> Tổng tiền: </p>
+          <div class="PaymentBox"> Thanh toán</div>
+        </div>
+        <ul class="goodslist">
+          <li class="goods">
+            <p class="goods A"> Hàng A </p>
+            <p class="price"> Giá: </p>
+            <div class="OmitBox A"> Bỏ ra </div>
+          </li>
+          <li class="goods">
+            <p class="goods B"> Hàng B </p>
+            <p class="price"> Giá: </p>
+            <div class="OmitBox B"> Bỏ ra </div>
+          </li>
+             <li class="goods">
+            <p class="goods C"> Hàng C </p>
+            <p class="price"> Giá: </p>
+            <div class="OmitBox C"> Bỏ ra </div>
+          </li>
+        </ul>
+        <nav>
+          <ul class="typelist">
+            <li class="type"><a href="#fruit">Trái cây</a></li>
+            <li class="type"><a href="#process">Chế biến</a></li>
+            <li class="type"><a href="#food">Lương thực</a></li>
+            <li class="type"><a href="#milk">Sữa</a></li>
+            <li class="type"><a href="#drink">Đồ uống</a></li>
+            <li class="type"><a href="#cake">Bánh</a></li>
+            <li class="type"><a href="#art">Mỹ nghệ</a></li>
+            <li class="type"><a href="#misc">Tạp hóa</a></li>
+          </ul>
+        </nav>
       </header>
 
       <main>
-        <div class="recipe a">
-          <img src="./_layouts/Buoidaxanh.jpg" />
+       
+        <div class="recipe fru01" id="fruit">
+          <img src="./Buoidaxanh.jpg" />
           <h2> BƯỞI DA XANH</h2>
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          <p class="price"> Giá: 55.000 đ/kg </p>
+          <img src="./time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
           <p class="description">
-            Bưởi da xanh ruột đỏ hồng, ngọt, bao ăn. Giá 55.000 đ/kg.</p>
+            Bưởi da xanh Bến tre, ruột đỏ hồng, ngọt, bao ăn.</p>
         </div>
-        <div class="recipe b">
-          <img src="..\DauDua.jpg" />
-          <h2>DẦU DỪA</h2>
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+        <div class="recipe fru02">
+          <img src="./Buoinamroi.jpg" />
+          <h2>BƯỞI NĂM ROI</h2>
+          <p class="price"> Giá: 25.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
           <p class="description">
-            Dầu dừa nguyên chất 100%, gia nhiệt để được lâu dùng để chăm sóc da, tóc hoặc làm gia vị. Giá 120.000 đ/chai 350ml.
-          </p>
+            Bưởi năm roi Bến tre, da mỏng, ngọt và thanh, bao ăn.</p>
         </div>
-        <div class="recipe c">
-          <img src="..\Quyt.jpg" />
+        <div class="recipe fru03">
+          <img src="./Quyt.jpg" />
           <h2>QUÝT</h2>
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          <p class="price"> Giá: 55.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
           <p class="description">
-            Quýt ngọt Bến tre, bao ăn. Giá 55.000 đ/kg.</p>
+            Quýt ngọt Bến tre, bao ăn.</p>
         </div>
-        <div class="recipe d">
-          <img src="https://github.com/tranminhtri75/tranminhtri75.github.io/tree/master/_layouts/Cam.jpg" />
+        <div class="recipe fru04">
+          <img src="./Camsanh.jpg" />
+          <h2>CAM SÀNH</h2>
+          <p class="price"> Giá: 30.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Cam sành Bến tre, mộng nước, thanh, bao ăn.</p>
+        </div>
+        <div class="recipe fru05">
+          <img src="./Camxoan.jpg" />
           <h2>CAM XOÀN</h2>
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          <p class="price"> Giá: 50.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
           <p class="description">
-            Cam xoàn Bến tre, vỏ mỏng, ngọt, bao ăn. Giá 55.000 đ/kg.</p>
+            Cam xoàn Bến tre, vỏ mỏng, ngọt, bao ăn.</p>
         </div>
-        <div class="recipe e">
-          <img src="./_layouts/Chanh.jpg" />
+        <div class="recipe fru06">
+          <img src="./Chanh.jpg" />
           <h2>CHANH</h2>
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          <p class="price"> Giá: 10.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
           <p class="description">
-            Chanh vườn Bến tre, thơm. Giá 10.000 đ/kg.</p>
+            Chanh vườn Bến tre, thơm.</p>
         </div>
-        <div class="recipe f">
-          <img src="..\Gac.jpg" />
+        <div class="recipe fru07">
+          <img src="./Gac.jpg" />
           <h2>GẤC</h2>
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          <p class="price"> Giá: 40.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
           <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
           <p class="description">
-            Gấc tươi vườn Bến tre. Giá 40.000 đ/kg.</p>
+            Gấc tươi vườn Bến tre.</p>
         </div>
-         
+        <div class="recipe fru08">
+          <img src="./Coc.jpg" />
+          <h2>CÓC</h2>
+          <p class="price"> Giá: 15.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Cóc vườn Bến tre, trái vừa, ngon.</p>
+        </div>
+        <div class="recipe fru09">
+          <img src="./Chuoigia.jpg" />
+          <h2>CHUỐI GIÀ</h2>
+          <p class="price"> Giá: 20.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Chuối già vườn Bến tre, sạch, trái to, ngon.</p>
+        </div>
+        <div class="recipe fru10">
+          <img src="./Chuoisu.jpg" />
+          <h2>CHUỐI SỨ</h2>
+          <p class="price"> Giá: 25.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Chuối sứ vườn Bến tre, sạch, trái to, ngon.</p>
+        </div>
+       <div class="recipe fru11">
+          <img src="./Duaxiem.jpg" />
+          <h2> DỪA XIÊM</h2>
+          <p class="price"> Giá: 10.000 đ/trái </p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Dừa xiêm Bến tre, nước nhiều ngọt.</p>
+        </div>
+        <div class="recipe fru12">
+          <img src="./Duata.jpg" />
+          <h2>DỪA TA</h2>
+          <p class="price"> Giá: 15.000 đ/trái</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Dừa ta Bến tre, cơm dầy, trái to.</p>
+        </div>
+        <div class="recipe fru13">
+          <img src="./Xoaicat.jpg" />
+          <h2>XOÀI CÁT HÒA LỘC</h2>
+          <p class="price"> Giá: 55.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Xoài cát Hòa lộc, trái to, vỏ mỏng, ngon, bao ăn.</p>
+        </div>
+        <div class="recipe fru14">
+          <img src="./Xoaithai.jpg" />
+          <h2>XOÀI THÁI</h2>
+          <p class="price"> Giá: 50.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Xoài Thái, vỏ xanh, ngọt, dòn, bao ăn.</p>
+        </div>      
+        <div class="recipe fru15">
+          <img src="./Oi.jpg" />
+          <h2>ỔI</h2>
+          <p class="price"> Giá: 10.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+           Ổi vườn, ngọt, giòn.</p>
+        </div>
+        <div class="recipe fru16">
+          <img src="./Dudu.jpg" />
+          <h2>ĐU ĐỦ</h2>
+          <p class="price"> Giá: 10.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Đủ đủ vườn, sạch, ngon.</p>
+        </div>
+        <div class="recipe fru17">
+          <img src="./Duagang.jpg" />
+          <h2>DƯA GANG</h2>
+          <p class="price"> Giá: 10.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Dưa gang vườn, sạch, ngọt.</p>
+        </div>
+        <div class="recipe fru18">
+          <img src="./Chomchom.jpg" />
+          <h2>CHÔM CHÔM</h2>
+          <p class="price"> Giá: 40.000 đ/kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Chôm chôm tróc, ngọt, vỏ mỏng.</p>
+        </div>
+        <div class="recipe pro01" id="process">
+          <img src="./Daudua.jpg" />
+          <h2>DẦU DỪA</h2>
+          <p class="price"> Giá: 120.000 đ/chai 350ml</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Dầu dừa nguyên chất 100% gia nhiệt, để được lâu, dùng chăm sóc da, tóc ...</p>
+        </div>
+        <div class="recipe pro02" id="process">
+          <img src="./Nuocmaudua.jpg" />
+          <h2>NƯỚC MÀU DỪA</h2>
+          <p class="price"> Giá: 62.000 đ/chai 250ml</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Nước màu dừa Bến tre nguyên chất gia nhiệt để lâu, dùng kho cá thịt.</p>
+        </div>
+        <div class="recipe pro03">
+          <img src="./Botsanday.jpg" />
+          <h2>BỘT SĂN DÂY</h2>
+          <p class="price"> Giá: 75.000 đ/500g</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Bột săn dây Buôn ma thuột nguyên chất 100%, thức uống hoặc ăn dặm, tính mát chống lở miệng.</p>
+        </div>
+        <div class="recipe pro04">
+          <img src="./Botnghe.jpg" />
+          <h2>TINH BỘT NGHỆ</h2>
+          <p class="price"> Giá: 65.000 đ/100g</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Tinh bột nghệ Buôn ma thuột nguyên chất 100%. Thức uống tốt cho bao tử.</p>
+        </div>
+        <div class="recipe pro05">
+          <img src="./Matong.jpg" />
+          <h2>MẬT ONG THIÊN NHIÊN</h2>
+          <p class="price"> Giá: 300.000 đ/chai 250ml</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Mật ong ruồi thiên nhiên nguyên chất 100% bắt tại vườn, dùng để uống hoặc ngâm chanh đào vv tăng sức đề kháng thanh lọc cơ thể.</p>
+        </div>
+        <div class="recipe pro06">
+          <img src="./Matongnuoi.jpg" />
+          <h2>MẬT ONG NUÔI RỪNG</h2>
+          <p class="price"> Giá: 150.000 đ/chai 250ml</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Mật ong nuôi rừng nguyên chất 100%, dùng để uống hoặc ngâm chanh đào vv tăng sức đề kháng thanh lọc cơ thể.</p>
+        </div>
+        <div class="recipe pro07">
+          <img src="./Chanhmuoi.jpg" />
+          <h2>CHANH MUỐI</h2>
+          <p class="price"> Giá: 50.000 đ/ hủ 200g</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Chanh muối chua mặn, giải khát.</p>
+        </div>
+        <div class="recipe mis01" id="misc">
+          <img src="./Thamxodua.jpg" />
+          <h2>THẢM SƠ DỪA</h2>
+          <p class="price"> Giá: 50.000 đ/cái</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Thảm sơ dừa Bến tre.</p>
+        </div>
+        <div class="recipe foo01" id="food">
+          <img src="./Recmin1.jpg" />
+          <h2>GẠO RECMIN LOẠI 1</h2>
+          <p class="price"> Giá: 50.000 đ/túi 5kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Gạo Recmin loại 1 dẻo vừa, ngon cơm, cơm nguội không bị khô.</p>
+        </div>
+        <div class="recipe foo02" id="food">
+          <img src="./Tauhuong.jpg" />
+          <h2>GẠO TÀU HƯƠNG</h2>
+          <p class="price"> Giá: 50.000 đ/túi 5kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Gạo SẠCH lúa mùa 1 vụ / 1 năm.</p>
+        </div>
+        <div class="recipe foo03" id="food">
+          <img src="./Laisua.jpg" />
+          <h2>GẠO LÀI SỮA LOẠI 1</h2>
+          <p class="price"> Giá: 50.000 đ/túi 5kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Gạo dẻo nhiều, nấu vừa nước, thơm.</p>
+        </div>
+        <div class="recipe foo04" id="food">
+          <img src="./Luc.jpg" />
+          <h2>GẠO LỨC</h2>
+          <p class="price"> Giá: 50.000 đ/túi 5kg</p>
+          <img src="./time.svg" class="time" />
+          <p class="mins">Giao hàng: 24 giờ</p>
+          <div class="BuyBox A">MUA </div>
+          <p class="description">
+            Gạo lức ăn tốt cho tiêu hóa.</p>
+        </div>
+    
       </main>
 
       <footer>
-        <img src="..\KH_logo.png" class="logo">
-         <div class="companyname"> CÔNG TY KHANG HIỂN </div>
-         <div class="copyright"> Khang Hien Co. giữ bản quyền nội dung trang web này </div>
+        <img src="./KH_logo.png" class="logo">
+        <div class="hotline"> Mua trực tuyến chọn hàng rồi bấm "THANH TOÁN". Mua ngoại tuyến gọi: 0964 005253 hoặc 01672910470</div>
+        <div class="greeting"> Trân trọng cảm ơn Quý khách hàng! </div>
+        <div class="social">
+          <a class="item_fb btn_facebook" rel="nofollow" href="javascript:;" title="Chia sẻ bài viết lên facebook"><i class="ic ic-facebook"></i></a>
+          <a class="item_twit btn_twitter get-link-bitly" rel="nofollow" href="javascript:;" data-url="https://suckhoe.vnexpress.net/tin-tuc/suc-khoe/mong-uoc-lam-me-dang-do-cua-san-phu-hiem-muon-bac-ninh-3674232.html" title="Chia sẻ bài viết lên twitter"><i class="ic ic-twitter"></i></a>
+          <a class="item_google btn_google" rel="nofollow" href="javascript:;" title="Chia sẻ bài viết lên google+"><i class="ic ic-google-plus"></i></a>
+        </div> 
+        <div class="copyright"> Right Price Co. &copy 2017.  All rights reserved. </div>
       </footer>
 
     </div>
