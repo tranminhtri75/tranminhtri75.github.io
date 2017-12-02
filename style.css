@@ -7,12 +7,12 @@ header {
   background-color: wheat;
   display: grid;
   grid-template-columms: 200px 900px;
-  grid-template-rows: 150px 35px;
+  grid-template-rows: 180px 35px;
   justify-content: start;
   align-content: end;
   justify-items: start;
   align-items: center;
-  height: 185px;
+  height: 215px;
   z-index: 5;
   position: fixed;
   top: 0px;
@@ -24,10 +24,10 @@ header {
   grid-row: 1/2;
   grid-column: 1/2;
   width: 200px;
-  height: 150px;
+  height: 180px;
   border-right: 2px solid sienna;
-  font-family: Arial;
-  font-size: 14px;
+  font-family: 'Helvetica', 'Arial';
+  font-size: 18px;
   color: navy;
   font-weight: bold;
   text-align: left;
@@ -36,7 +36,7 @@ header {
 }
 
 .sum {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Helvetica','Bree Serif', serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.3px;
@@ -44,20 +44,25 @@ header {
 }
 
 .PaymentBox {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
   border: 2px solid greenyellow; 
-  height: 20 px;
-  width: 100px;
+  height: 40 px;
+  width: 150px;
   text-align: center;
-  margin-left: 38px;
+  margin-left: 22px;
   background-color: greenyellow;
   border-radius: 7px;
   color: navy;
+  cursor: pointer;
 }
 
 ul.goodslist {
   grid-row: 1/2;
   grid-column: 2/3; 
-  height: 150px;
+  height: 180px;
   width: 900px;
   text-align: left;
   padding: 5px 5px 5px 5px ;
@@ -67,14 +72,18 @@ ul.goodslist {
 }
 
 li.goods {
-  font-family: Arial;
-  font-size: 14px;
+  font-family: 'Helvetica';
+  font-weight: normal
+  font-size: 15px;
+  text-transform: none;
   color: navy;
   font-weight: normal;
   text-align: left;
   display: inline-block;
-  width: 150px;
+  width: 200px;
+  height:170px;
   margin: 5px 5px 5px 5px;
+  z-index: 1;
 }
 
 .OmitBox {
@@ -84,6 +93,7 @@ li.goods {
   text-align: center;
   background-color: tan;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 nav {
@@ -126,7 +136,7 @@ main {
   align-items: stretch;
   align-content: space-evenly;
   grid-auto-flow: row dense;
-  margin-top: 200px;
+  margin-top: 225px;
   margin-left: 0px;
   overflow: auto;
 }
@@ -142,9 +152,10 @@ img {
 }
 
 h2 {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Helvetica','Bree Serif', serif;
   font-size: 18px;
   font-weight: 600;
+  text-transform: uppercase;
   letter-spacing: 0.3px;
   text-align: left;
   color: dodgerblue;
@@ -152,10 +163,10 @@ h2 {
 }
 
 .price {
-  font-family: Poppins;
-  font-size: 16px;
+  font-family: 'Helvetica','Poppins';
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   text-align: left;
   color: #ff00ff;
   padding: 0px 0px 0px 5px;
@@ -170,7 +181,7 @@ h2 {
 
 .mins {
   display: inline-block;
-  font-family: Poppins;
+  font-family: 'Helvetica','Poppins';
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -192,10 +203,11 @@ h2 {
   font-weight: bold;
   font-family: Poppins;
   color: navy;
+  cursor: pointer;
 }
 
 .description {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Helvetica','Work Sans', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.29;
