@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> GIÁ ĐÚNG - MUA</title>
+    <link rel="stylesheet" type="text/css" href="buystyle.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster|Work+Sans" rel="stylesheet">
+    <script src="./angular.min.js"></script>
+    <script src="./angular-local-storage.js"></script>
+    <!-- <script src="./angular-local-storage.min.js"></script>-->
+    <!-- Modules -->
+    <script src="./app.js"></script>
+    <!-- Controllers --> 
+    <script src="./BuyController.js"></script>
+  </head>
+
+  <body ng-app="myApp" >
+ 
+    <div class="container">
+
+      <header >
+        <img src="./Giadung_logo.png" class="logo">
+        <div class="buy"> Mua hàng </div>
+        <div class="online"> Mua trực tuyến Nhập thông tin khách hàng rồi bấm "THANH TOÁN"</div>
+        <div class="offline"> Mua ngoại tuyến Gọi: 0964 005253 hoặc 01672910470</div>
+      </header>
+      <main>
+        <div class="info">
+          <h2> Nhập thông tin khách hàng </h2> 
+          <input class="inputbox" type="text" ng-init="buyer = 'Tên khách hàng' " ng-model="buyer">
+          <input class="inputbox" type="text" ng-init="phone = 'Số điện thoại khách hàng' "ng-model="phone">
+          <input class="inputbox" type="text"  ng-init="address = 'Địa chỉ nhận hàng' " ng-model="address">
+          <input class="inputbox" type="text" ng-init="email = 'Email khách hàng' " ng-model="email">
+        </div>
+        <div class="list" ng-controller="BuyController"> 
+          <h2>Danh sách hàng mua </h2>
+          <h3> Mã giỏ hàng: {{ cartID}}  <i style="color: black; font-size: 14px">  (Khách hàng ghi nhớ Mã giỏ hàng để xác nhận khi giao hàng) </i></h3>
+          <ul class="goodslist" >
+            <li class="goods" ng-repeat="product in selectproducts">
+              <p> {{product.name }} </p>
+              <p class="price"> Giá: {{product.price}} VNĐ <br> Đơn vị: {{product.unit}} <br> Số lượng: {{product.quantity}}</p>
+            </li>
+          </ul>          
+          <h3> Tổng tiền: {{ sum }} VNĐ</h3>
+        </div>
+        <div class="payment" ng-controller="PaymentController"><button class="PaymentBox" ng-click="alert()">Thanh toán</button></div>
+      </main>
+      <footer>
+        <div class="delivery1"><i > Khách hàng bấm thanh toán, nhân viên giao nhận của chúng tôi sẽ liên lạc với khách hàng</i></div>
+        <div class="delivery2"> <i >Khi nhận hàng, khách hàng cung cấp: Tên, Mã giỏ hàng và Số điện thoại để kiểm tra đối chiếu </i></div>
+        <div class="greeting"> Trân trọng cảm ơn Quý khách hàng! </div>
+        <div class="copyright"> giadung.biz &copy 2017.  All rights reserved. </div>
+      </footer>
+
+    </div>
+ 
+  </body>
+
+</html>

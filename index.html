@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster|Work+Sans" rel="stylesheet">
     <script src="./angular.min.js"></script>
+    <script src="./angular-local-storage.js"></script>
+    <!-- <script src="./angular-local-storage.min.js"></script>-->
     <!-- Modules -->
     <script src="./app.js"></script>
     <!-- Controllers--> 
@@ -20,9 +22,9 @@
 
       <header >
         <div class="cart" >
-          <p class="cartname"> Giỏ hàng: {{ buyerID}} </p>
-          <p class="sum"> Tổng tiền: {{sum}}</p>
-          <button class="PaymentBox"> Thanh toán</button>
+          <p class="cartname"> Giỏ hàng: {{ cartID}} </p>
+          <p class="sum"> Tổng tiền: {{sum}} VNĐ</p>
+          <a href="./buy.html" target="_blank" ng-if="check()"><button class="BuyBox" ng-click = "buy()"> MUA</button></a>
         </div>
         <ul class="goodslist" >
           <li class="goods" ng-repeat="product in selectproducts">
@@ -33,14 +35,15 @@
         </ul>
         <nav>
           <ul class="typelist">
-            <li class="type"><a href="#fruit">Trái cây</a></li>
-            <li class="type"><a href="#process">Chế biến</a></li>
-            <li class="type"><a href="#food">Lương thực</a></li>
-            <li class="type"><a href="#milk">Sữa</a></li>
-            <li class="type"><a href="#drink">Đồ uống</a></li>
-            <li class="type"><a href="#cake">Bánh</a></li>
-            <li class="type"><a href="#art">Mỹ nghệ</a></li>
-            <li class="type"><a href="#misc">Tạp hóa</a></li>
+            <li class="type"><a href="#cake" style="text-decoration: none">Bánh</a></li> 
+            <li class="type"><a href="#process" style="text-decoration: none">Chế biến</a></li>           
+            <li class="type"><a href="#toy" style="text-decoration: none">Đồ chơi</a></li>
+            <li class="type"><a href="#drink" style="text-decoration: none">Đồ uống</a></li>
+            <li class="type"><a href="#food" style="text-decoration: none">Lương thực</a></li>
+            <li class="type"><a href="#art" style="text-decoration: none">Mỹ nghệ</a></li>
+            <li class="type"><a href="#milk" style="text-decoration: none">Sữa</a></li>
+            <li class="type"><a href="#misc" style="text-decoration: none">Tạp hóa</a></li>
+            <li class="type"><a href="#fruit" style="text-decoration: none">Trái cây</a></li>
           </ul>
         </nav>
       </header>
@@ -52,7 +55,7 @@
           <p class="price"> Giá: {{product.price}} VNĐ <br> Đơn vị: {{product.unit}} </p>
           <img src="./time.svg" class="time" />
           <p class="mins">Giao hàng: {{product.delivery}}</p>
-          <button class="BuyBox" ng-click = "select($index); calSum($index)">MUA</button>
+          <button class="SelectBox" ng-click = "select($index); calSum($index)">CHỌN</button>
           <p class="description"> {{ product.description}}
             </p>
         </div>
@@ -60,8 +63,8 @@
 
       <footer>
         <img src="./Giadung_logo.png" class="logo">
-        <div class="online"> Mua trực tuyến chọn hàng rồi bấm "THANH TOÁN"</div>
-        <div class="offline"> Mua ngoại tuyến gọi: 0964 005253 hoặc 01672910470</div>
+        <div class="online"> Mua trực tuyến Chọn hàng rồi bấm "MUA"</div>
+        <div class="offline"> Mua ngoại tuyến Gọi: 0964 005253 hoặc 01672910470</div>
         <div class="greeting"> Trân trọng cảm ơn Quý khách hàng! </div>
         <div class="social">
           <a class="item_fb btn_facebook" rel="nofollow" href="javascript:;" title="Chia sẻ bài viết lên facebook"><i class="ic ic-facebook"></i></a>

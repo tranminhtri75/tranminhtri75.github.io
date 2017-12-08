@@ -1,0 +1,250 @@
+.container {
+  min-width: 500px;
+  width: 1100px;
+  margin-top: 0px;
+  margin-left: 0px;
+  border: 5px solid wheat;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+header {
+  background-color: wheat;
+  display: grid;
+  grid-template-columms: 200px 900px;
+  grid-template-rows: 50px 30px 30px;
+  justify-content: start;
+  align-content: center;
+  justify-items: start;
+  align-items: center;
+  height: 110px;
+  width: 1110px;
+  z-index: 5;
+  position: fixed;
+  top: 0px;
+  left: 8px;
+  margin-top: 0px;
+}
+
+.logo {
+  width: 190px;
+  height: 100px;
+  object-fit: contain;
+  padding: 0px 0px 0px 0px;
+  grid-row: 1/4;
+  grid-column: 1/2;
+  align-self: center;
+  margin: 5px 5px 5px 15px;
+}
+
+.buy {
+  font-family:  'Lobster', cursive;
+  font-size: 35px;
+  color: fuchsia;
+  font-weight: bold;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin-left: 20px;
+}
+
+.online {
+  font-family: Geneva;
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin-left: 20px;
+}
+
+.offline {
+  font-family: Geneva;
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  margin-left: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1100px;
+  grid-template-rows: 180px auto 100px;
+  grid-gap: 0px;
+  justify-items: space-evenly;
+  justify-content: stretch;
+  align-items: stretch;
+  align-content: space-evenly;
+  grid-auto-flow: row dense;
+  margin-top: 100px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-family: Geneva;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  grid-row: 1/2;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-family: Geneva;
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.inputbox {
+  font-family: Geneva;
+  font-size: 16px;
+  width: 500px;
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.list {
+  font-family: Geneva;
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+  grid-row: 2/3;
+  margin-left: 10px;
+}
+
+h3 {
+  font-family: 'Helvetica','Bree Serif', serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #ff00ff;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+ul.goodslist {
+  height: auto;
+  text-align: left;
+  padding: 0px 5px 0px 5px ;
+  margin: 0px 0px 0px 10px;
+  overflow: auto;
+  grid-auto-flow: column;
+}
+
+li.goods {
+  font-family: 'Helvetica';
+  font-weight: normal
+  font-size: 15px;
+  text-transform: none;
+  color: navy;
+  font-weight: normal;
+  text-align: left;
+  display: inline-block;
+  width: 200px;
+  height:110px;
+  margin: 0px 5px 0px 5px;
+  z-index: 1;
+}
+
+.price {
+  font-family: 'Helvetica','Poppins';
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #ff00ff;
+  padding: 0px 0px 0px 5px;
+}
+
+.payment {
+  font-family: Geneva;
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+  grid-row: 3/4;
+  margin-left: 10px;
+  position: relative;
+  top: 30px;
+  bottom: 20px;
+}
+
+.PaymentBox {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border: 2px solid greenyellow; 
+  height: 40 px;
+  width: 150px;
+  text-align: center;
+  margin-left: 22px;
+  background-color: greenyellow;
+  border-radius: 7px;
+  color: navy;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  grid-template-columms: auto;
+  grid-template-rows: 20px 20px 40px 15px;
+  justify-content: stretch;
+  align-content: center;
+  align-items: center;
+  height:120px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  grid-gap: 5px;
+  background-color: wheat;
+}
+
+.delivery1{
+  font-family: Geneva;
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+  grid-row: 1/2;
+  margin-left: 20px;
+}
+
+.delivery2{
+  font-family: Geneva;
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+  grid-row: 2/3;
+  margin-left: 20px;
+}
+
+.greeting {
+  font-family:  'Lobster', cursive;
+  font-size: 35px;
+  color: fuchsia;
+  font-weight: bold;
+  grid-row: 3/4;
+  justify-self: center;
+}
+
+.copyright {
+  font-family: Arial;
+  font-size: 12px;
+  color: black;
+  grid-row: 4/5;
+  margin-left: 10px;
+  justify-self: center;
+}
+
+
+
+
+
+

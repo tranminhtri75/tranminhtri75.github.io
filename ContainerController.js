@@ -1,6 +1,6 @@
-﻿app.controller ('ContainerController',['$scope', '$rootScope', function($scope, $rootScope) { 
+﻿app.controller ('ContainerController',['$scope', '$rootScope', function($scope, $rootScope, localStorageService) { 
 
-  $rootScope.buyerID= Math.floor(Math.random()*1000);
+  $rootScope.cartID= Math.floor(Math.random()*1000);
   $rootScope.sum= 0;
   $rootScope.selectproducts = [];
   
@@ -12,7 +12,18 @@
       $rootScope.selectproducts.splice(index,1)}};
 
   $scope.omitSum=function(index) {$rootScope.sum = $rootScope.sum - $rootScope.selectproducts[index].price};
-   
+  
+  $scope.check = function() {
+    if ($rootScope.sum === 0) { return false;}
+    else {return true;}};
+
+  $scope.buy = function() {
+    if ($rootScope.sum === 0) { alert('QUÝ KHÁCH VUI LÒNG CHỌN HÀNG!'); }
+    else {
+      sessionStorage.setItem("magiohang",$rootScope.cartID);
+      sessionStorage.setItem("tong",$rootScope.sum);
+      sessionStorage.setItem("hangmua",JSON.stringify($rootScope.selectproducts));}};
+  
 }]);
 
 app.controller ('MainController', ['$scope', '$rootScope', function($scope, $rootScope) { 
@@ -314,6 +325,4 @@ app.controller ('MainController', ['$scope', '$rootScope', function($scope, $roo
   
   $scope.calSum=function(index) {$rootScope.sum = $rootScope.sum + $scope.products[index].price};
   
-}
-]
-);
+}]);
